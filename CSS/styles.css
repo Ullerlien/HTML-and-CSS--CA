@@ -1,0 +1,497 @@
+/* Bebas Neue, Montserrat, Inter, Roboto */
+
+html {
+    box-sizing: border-box;
+   }
+   html:focus-within {
+    scroll-behavior: smooth;
+   }
+   *,
+   *::before,
+   *::after {
+    box-sizing: inherit;
+   }
+
+
+
+
+:root {
+    --clr-primary: #EC4E20;
+    --clr-dark: #0A3641;
+    --clr-light: #FBF5F3;
+    --ffam-titles: 'Bebas Neue';
+    --fw-titles-primary: 400;
+    --fw-titles-bold: 600;
+
+    --ffam-body: 'Montserrat';
+    --fw-body-primary: 300;
+    --fw-body-regular: 400;
+    --fw-body-bold: 700;
+
+    --gird: 1fr;
+}   
+
+
+
+
+body {
+    margin: 0;
+    background-color: var(--clr-light);
+    font-family:'Montserrat', sans-serif;
+    font-size: 1.125rem;
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--clr-light);
+    padding: 1em;
+    text-align: center;
+    min-height: 75px;
+    left: 0px;
+    top: 43px;
+}
+
+
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 122px;
+    height: 65px;
+    
+    
+}
+
+
+
+
+.hamburger-icon, .cart-icon {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    
+    
+}
+
+.fas {
+    font-weight: 900;
+    font-size: 27px;
+}
+
+
+
+
+.nav {
+    text-align: start;
+}
+
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 5px;
+    list-style-type: none;
+    font-family: var(--ffam-body);
+    font-weight: var(--fw-body-regular);
+    line-height: 24px;
+
+
+}
+
+
+
+.nav , .sign-up , .login , #menu-checkbox, #cart-checkbox {
+    display: none;
+}
+
+#menu-checkbox:checked ~ .nav {
+    display: block;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: var(--clr-dark);
+}
+
+.active {
+    color: var(--clr-primary);
+}
+
+.main {
+    margin: 0;
+    padding: 5em 0em 1rem 0em;
+}
+
+
+.main-home {
+    margin: 0;
+    color: var(--clr-light);
+    background-image: url(../images/home-hero-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--clr-dark);
+    background-position-x: center;
+    background-position-y: right;
+    
+}
+
+.main-title {
+    color: var(--clr-light);
+    padding-top: .5em;
+    font-weight: var(--fw-titles-primary);
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    letter-spacing: .12em;
+    margin: 0;
+}
+
+.main-intro {
+    color: var(--clr-light);
+    margin: 0;
+    padding-top: 4.5em;
+    padding-bottom: 5.3em;
+    font-weight: var(--fw-body-primary);
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: .04em;
+}
+
+
+
+
+
+#top {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.25rem;
+}
+
+#top a {
+    text-decoration: none;
+    color: var(--clr-light);
+}
+
+.main-home .arrow-down {
+    justify-content: center;
+    
+}
+
+
+
+.best-sellers {
+    display: flex;
+    justify-content: center;
+    font-weight: var(--fw-body-regular) ;
+    font-size: 2.25rem;
+    color: var(--clr-dark);
+}
+
+.product-spotlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 10em 0em 10rem 0em;
+    background-image: url(../images/skiing-bg-img.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    
+}
+
+
+
+
+
+
+.see-all-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+
+    color: var(--clr-light);
+
+    text-decoration: none;
+
+    border: solid 4px;
+    border-color: var(--clr-primary);
+    border-radius: 20px;
+    background-color: var(--clr-primary);
+    padding: .5em 1.25em;
+    margin-top: 8em;
+}
+
+.see-all-btn:hover {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+}
+
+
+footer {
+    background-color: var(--clr-primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer li a {
+    color: var(--clr-light);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    padding: 5px;
+    
+}
+
+#bottom {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+#bottom a {
+    text-decoration: none;
+    color: var(--clr-light);
+    text-transform: uppercase;
+    font-weight: var(--fw-body-bold);
+
+}
+
+.arrow-up {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    max-width: 25.51px;
+    max-height: 13.69px;
+
+    align-items: center;
+
+    
+
+}
+
+.footer-nav {
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+
+.brandname {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.nav-list-footer, .nav-link-footer {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+}
+
+
+
+
+
+h1 {
+    font-family: 'Bebas Neue', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+
+
+.copyright {
+    margin-top: 10px;
+
+    color: var(--clr-light);
+    font-weight: var(--fw-body-regular);
+    font-size: 15px;
+    text-align: center;
+    
+}
+
+
+
+@media (min-width: 600px) {
+
+
+    header {
+        align-items: center;
+        justify-content: space-evenly;
+        
+        
+    }
+
+
+    .main-home {
+        
+        
+    }
+
+    .main-title{
+
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+
+    .main-intro {
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        letter-spacing: 0.156em;
+        flex-wrap: wrap;
+        
+    }
+
+
+    #top {
+        padding-top: 240px;
+    }
+
+
+    .nav {
+        display: flex;
+        flex: 1;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    
+
+
+    .logo {
+        display: flex;
+        position: relative;
+        max-height: 76px;
+        max-width: 141px;
+        
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        gap: 0px;
+        margin: 0;
+        list-style-type: none;
+        font-family: var(--ffam-body);
+        font-weight: var(--fw-body-regular);
+        line-height: 24px;
+        
+        
+    }
+    
+    .sign-up , .login {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        color: var(--clr-dark);
+        text-decoration: none;
+    
+    }
+
+
+
+
+
+    .login {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+
+        color: var(--clr-light);
+
+        text-decoration: none;
+
+        border: solid 3px;
+        border-color: var(--clr-primary);
+        border-radius: 10px;
+        background-color: var(--clr-primary);
+        padding: .5em 1.25em;
+        
+        
+    }
+
+
+    .login:hover {
+        color: var(--clr-primary);
+        background-color: var(--clr-light);
+        line-height: 19.36px;
+        
+        
+    }
+
+
+
+    .sign-up {
+        margin-right: 10px;
+    }
+
+
+
+
+    .hamburger-icon {
+        display: none;
+    }
+
+    .cart-icon {
+        display: none;
+    }
+
+
+
+
+
+    .copyright {
+        text-align: start;
+    }
+}
