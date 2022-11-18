@@ -46,13 +46,15 @@ body {
 
 header {
     display: flex;
+    position: sticky;
+    z-index: 51;
     justify-content: space-between;
     background-color: var(--clr-light);
-    padding: 1em;
+    padding: 0em 1em 0em 1em;
     text-align: center;
     min-height: 75px;
     left: 0px;
-    top: 43px;
+    top: 0px;
 }
 
 
@@ -89,6 +91,11 @@ header {
 
 .nav {
     text-align: start;
+    top: 75px;
+    left: 0;
+    width: 100%;
+    
+    
 }
 
 
@@ -97,23 +104,33 @@ header {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-    padding: 5px;
+    padding: 0px 25px;
     list-style-type: none;
     font-family: var(--ffam-body);
     font-weight: var(--fw-body-regular);
-    line-height: 24px;
+    line-height: 75px;
+    background: var(--clr-light);
+    
+    
 
 
 }
 
+.list-item {
+    border-bottom: solid 1px;
+    
+}
 
 
 .nav , .sign-up , .login , #menu-checkbox, #cart-checkbox {
     display: none;
 }
 
+
+
 #menu-checkbox:checked ~ .nav {
     display: block;
+    position: absolute;
 }
 
 
@@ -177,11 +194,20 @@ header {
     justify-content: center;
     text-align: center;
     margin-top: 1.25rem;
+    margin-bottom: .75rem;
 }
 
 #top a {
     text-decoration: none;
     color: var(--clr-light);
+    
+}
+
+
+#arrow-down-svg {
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
 }
 
 .main-home .arrow-down {
@@ -214,9 +240,67 @@ header {
 }
 
 
+.faux-jacket-card {
+    
+    width: 294px;
+    height: 429px;
+    left: 0px;
+    top: 0px;
+
+    background: rgba(236, 78, 32, 0.8);
+    border-radius: 20px;
+
+}
+
+.white-bg {
+    position: relative;
+    width: 253px;
+    height: 311px;
+    left: 20px;
+    top: 30px;
+    
+    background: var(--clr-light);
+    border-radius: 20px;
+}
+
+.jacket1-img {
+    position: relative;
+    width: 228.37px;
+    height: 275px;
+    left: 13px;
+    top: 18px;
+
+}
+
+.product-title {
+    position: relative;
+    width: 83px;
+    height: 24px;
+    left: 19px;
+    top: 45px;
+    
+
+    font-family: var(--ffam-body);
+    font-weight: var(--fw-body-bold);
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--clr-light);
+}
+
+.price-tag {
+    position: relative;
+    width: 40px;
+    height: 24px;
+    left: 229px;
+    
 
 
-
+    font-family: var(--ffam-body);
+    font-weight: var(--fw-body-bold);
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--clr-light);
+}
 
 .see-all-btn {
     display: flex;
@@ -238,7 +322,7 @@ header {
 }
 
 .see-all-btn:hover {
-    background-color: var(--clr-light);
+    background-color: #e9eef1;
     color: var(--clr-primary);
 }
 
@@ -285,10 +369,15 @@ footer li a {
     max-width: 25.51px;
     max-height: 13.69px;
 
-    align-items: center;
+   
+}
 
-    
 
+
+#arrow-up-svg {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
 }
 
 .footer-nav {
@@ -353,12 +442,14 @@ p {
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
 
 
     header {
         align-items: center;
         justify-content: space-evenly;
+        position: relative;
+        padding: 1em;
         
         
     }
@@ -391,7 +482,9 @@ p {
 
     #top {
         padding-top: 240px;
+        
     }
+
 
 
     .nav {
@@ -400,6 +493,8 @@ p {
         position: static;
         flex-direction: column;
         justify-content: center;
+        width: auto;
+        text-align: start;
         
     }
     
@@ -412,6 +507,9 @@ p {
         max-width: 141px;
         
     }
+
+
+    
 
     .nav-list {
         display: flex;
@@ -427,6 +525,13 @@ p {
         
     }
     
+
+    .list-item {
+        border-bottom: none 1px;
+        
+    }
+
+
     .sign-up , .login {
         display: flex;
         justify-content: center;
