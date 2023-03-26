@@ -83,7 +83,7 @@ header {
     flex-direction: row;
     position: relative;
     align-items: center;
-    
+        
     
 }
 
@@ -149,7 +149,6 @@ header {
 .active {
     color: var(--clr-primary);
 }
-
 
 
 
