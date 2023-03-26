@@ -339,7 +339,7 @@ header {
 
     border: solid 4px;
     border-color: var(--clr-primary);
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: var(--clr-primary);
     padding: .5em 1.25em;
     margin-top: 8em;
@@ -813,6 +813,7 @@ label[for="name"]{
 
 .submit-btn {
     position: relative;
+    cursor: pointer;
     
     
     font-family: var(--ffam-body);
@@ -822,6 +823,12 @@ label[for="name"]{
     line-height: 24px;
     
     color: var(--clr-light);
+}
+
+.submit-btn:hover {
+    background-color: #e9eef1;
+    color: #EC4E20;
+    
 }
 
 .submit-text p {
